@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mjn-2d-ceM"/>
+                        <viewControllerLayoutGuide type="bottom" id="opr-34-UEs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="U3E-uy-vku">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="AQM-sC-w3g">
+                                <rect key="frame" x="0.0" y="225" width="600" height="150"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="clipped Image" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mY0-xL-WhG">
+                                <rect key="frame" x="246" y="168" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Original Image" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jcw-ui-WtZ">
+                                <rect key="frame" x="246" y="404" width="111" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jcw-ui-WtZ" firstAttribute="top" secondItem="AQM-sC-w3g" secondAttribute="bottom" constant="29" id="08M-qL-chR"/>
+                            <constraint firstItem="U3E-uy-vku" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="1B9-wa-G7h"/>
+                            <constraint firstItem="U3E-uy-vku" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="3gy-1M-9Uz"/>
+                            <constraint firstItem="AQM-sC-w3g" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="Hx0-uY-jG2"/>
+                            <constraint firstAttribute="centerX" secondItem="Jcw-ui-WtZ" secondAttribute="centerX" constant="-1.5" id="KYU-eT-E59"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AQM-sC-w3g" secondAttribute="trailing" constant="-16" id="W0N-7z-tPH"/>
+                            <constraint firstItem="U3E-uy-vku" firstAttribute="top" secondItem="Mjn-2d-ceM" secondAttribute="bottom" constant="-20" id="crC-0R-pgm"/>
+                            <constraint firstItem="AQM-sC-w3g" firstAttribute="top" secondItem="mY0-xL-WhG" secondAttribute="bottom" constant="36" id="kGZ-dK-Uy5"/>
+                            <constraint firstItem="AQM-sC-w3g" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="225" id="mfL-I2-Sk0"/>
+                            <constraint firstItem="AQM-sC-w3g" firstAttribute="centerX" secondItem="mY0-xL-WhG" secondAttribute="centerX" id="oUv-Aq-oV5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageview" destination="U3E-uy-vku" id="xOT-uQ-IA7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322.5" y="286.26760563380282"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.png" width="350" height="150"/>
+    </resources>
+</document>
